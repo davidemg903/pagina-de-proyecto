@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Registrarse</h1>
+<div class="container">
+    <div class="row">
+        <div class="col bg">
+            
+        </div>
+        <div class="col">
+            <form action="#">
+                <div class="mb-4">
+                  <label for="Name" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" name="name" placeholder="Nombre">
+                </div>
+            
+                <div class="mb-4">
+                  <label for="Address" class="form-label">Direccion de residencia</label>
+                  <input type="text" class="form-control" id="address" placeholder="Residencia">
+                </div>
+            
+                <div class="mb-4">
+                    <label for="number" class="form-label">Numero de cedula</label>
+                    <input type="number" class="form-control" name="cedula" placeholder="C.C">
+                  </div>
+            
+                <div class="mb-4">
+                  <label for="Email" class="form-label">Email</label>
+                  <input type="email" class="form-control" name="email"placeholder="Email">
+                </div>
+            
+                <div class="mb-4">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+            
+                <div class="mb-4">
+                  <button type="submit" class="btn btn-primary">Registrarse</button>
+                </div>
+            
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar sesion</div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                        <button class="btn btn-outline-primary w-25 my-1">
+                            Facebook
+                        </button>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                        <button class="btn btn-outline-danger w-25 my-1">
+                       Google
+                        </button>
+                        </div>
+                    </div>    
+                </div> 
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
